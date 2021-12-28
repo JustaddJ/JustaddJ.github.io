@@ -1,0 +1,49 @@
+.feedback {
+    padding: 105px 35px 92px 52px;
+    .title_small {
+        margin-left: 12px;
+        line-height: 31px;
+        &::before {
+            top: -3px;
+        }
+    }
+    .divider {
+        margin: 0;
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__photo {
+        margin-right: 68px;
+    }
+    &__contacts {
+        &__text {
+            margin: 20px 0;
+            font-weight: 700;
+            font-size: 14px;
+            color: #000;
+        }
+        &__links > a {
+            margin-right: 20px;
+        }
+        .button {
+            margin-top: 20px;
+            width: 219px;
+            height: 45px;
+        }
+    }
+    &__triggers {
+        display: flex;
+        align-items: baseline;
+    }
+    &__policy {
+        display: flex;
+        align-items: center;
+        margin-left: 35px;
+        font-weight: 500;
+        font-size: 12px;
+        span {
+            margin-left: 8px;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.title {
+    position: relative;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    color: #000000;
+    &_small {
+        margin-bottom: 0;
+        position: relative;
+        font-weight: 700;
+        font-size: 16px;
+        color: #000000;
+        z-index:1;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: $main-color;
+            top: 10px;
+            left: -13px;
+            z-index: -1;
+        }
+    } 
+}

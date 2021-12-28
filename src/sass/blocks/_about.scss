@@ -1,0 +1,78 @@
+.about {
+    padding-top: 120px;
+    .title_small {
+        margin-left: 12px;
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__photo {
+        margin-right: 70px;
+        // &_mobile {
+        //     display: none;
+        // }
+    }
+    &__text {
+        margin-top: -11px;
+    }
+    .divider {
+        margin: 0;
+    }
+    &__descr {
+        max-width: 570px;
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000000;
+    }
+    &__skills {
+        margin-top: 40px;
+        padding-left: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &-item {
+            display: flex;
+            align-items: start;
+            &:nth-child(2) {
+                .about__skills-item__img {
+                    margin-right: 27px;
+                }
+            }
+            &__img {
+                margin-top: 15px;
+                margin-right: 20px;
+            }
+            &__text {
+                position: relative;
+                max-width: 250px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 36px;
+                    height: 36px;
+                    left: -60px;
+                    background-color: $main-color;
+                    border-radius: 50%;
+                    z-index: -1;
+                }
+                &__title {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: #000000;
+                }
+                &__descr {
+                    margin-top: 6px;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #000000;
+                }
+            }
+            &:last-child {
+                margin-top: 40px;
+            }
+        }
+    }
+}
