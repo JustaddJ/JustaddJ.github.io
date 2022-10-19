@@ -58,7 +58,7 @@ const http = customHttp();
 
 const newsService = (function() {
   const apiKey = '72b823ea01784b59b8b8e62892578c72';
-  const apiUrl = 'https://newsapi.org/v2';
+  const apiUrl = 'https://news-api-v2.herokuapp.com';
 
   return {
     topHealines(country = 'us', category = 'general', cb) {
